@@ -1,14 +1,7 @@
-# #DAY.MONTH.YEAR
+import datetime
 
-# date = input()
+date = datetime.datetime.now()
+print(date.strftime("%Y-%m-%d"))
 
-# def convert_to_date(date):
-#     day, month, year = date.split('.')
-#     day = int(day)
-#     month = int(month)
-#     year = int(year)
-#     if day < 5:
-        
-#     return day, month, year
-
-# print(convert_to_date(date))
+back_to_5days = date - datetime.timedelta(days=5)
+print("Date that was 5 days ago: " + str(back_to_5days.strftime("%Y-%m-%d")))
