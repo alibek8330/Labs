@@ -78,14 +78,19 @@ movies = [
 }
 ]
 
-def get_high_rated(movies):
-  top_movies = []
+def get_random_movie(a):
+  result = False
+  list = []
   for i in movies:
-    if i["imdb"] > 5.5:
-      top_movies.append(i["name"])
-  for i in top_movies:
-    print(i, sep = ' ')
+    if i['name'] == a:
+      if i['imdb'] > 5.5:
+        result = True
+  for i in movies:
+    list.append(i["name"])
+  if a not in list:
+    return "There is no movie"
+  else:
+    return result
 
-get_high_rated(movies)
-
-
+a = input()
+print(get_random_movie(a))

@@ -1,12 +1,14 @@
 class Action:
+    def __init__(self):
+        self.string = ""
+
     def getString(self):
-        return self.str
+        self.string = input()
 
     def printString(self):
-        newStr = self.str.upper()
-        return newStr
+        print(self.string.upper())
 
 
 string = Action()
-
-print(string.printString())
+string.getString()
+string.printString()

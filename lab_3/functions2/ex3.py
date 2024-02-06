@@ -78,14 +78,15 @@ movies = [
 }
 ]
 
-def get_high_rated(movies):
-  top_movies = []
+import random
+
+def by_category(category_name):
+  list = []
   for i in movies:
-    if i["imdb"] > 5.5:
-      top_movies.append(i["name"])
-  for i in top_movies:
-    print(i, sep = ' ')
+    if i['category'] == category_name:
+      list.append(i['name'])
+  for i in list:
+    print(i, sep = '\n')
 
-get_high_rated(movies)
-
-
+category_name = input()
+by_category(category_name)

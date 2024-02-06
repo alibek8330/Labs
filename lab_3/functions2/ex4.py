@@ -85,5 +85,6 @@ def average_imdb():
   average = sum / (len(movies) + 1)
   print(average)
 
+
 print("The average IMDB score is ", end = '')
 average_imdb()

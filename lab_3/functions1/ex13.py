@@ -21,4 +21,3 @@ while condition is False:
     print("Take a guess")
     number = int(input())
   
-
