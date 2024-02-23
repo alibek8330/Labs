@@ -1,7 +1,6 @@
-def squares(a, b):
-  for i in range(a, b+1):
-    print(i ** 2, end =' ')
+def squares(start, stop):
+  while start <= stop:
+    yield start**2
+    start += 1
 
-a = int(input())
-b = int(input())
-squares(a, b)
+[print(x, end=' ') for x in squares(int(input()), int(input()))]

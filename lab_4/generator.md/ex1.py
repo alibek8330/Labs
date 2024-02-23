@@ -1,9 +1,7 @@
-def generator(n):
-  for i in range(1, n+1):
-    print(i ** 2, end = ' ')
-
-n = int(input())
-generator(n)
-
-
-
+def squares(n):
+  x = 1
+  while x <= n:
+    yield x**2
+    x += 1
+    
+[print(x, end=' ') for x in squares(int(input()))]

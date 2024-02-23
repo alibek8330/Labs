@@ -1,7 +1,7 @@
-def by_3_4(n):
-  for i in range(0, n):
-    if i % 3 == 0 and i % 4 == 0:
-      print(i, end = ' ')
+def div_by_3and4(n):  
+  x = 12
+  while x <= n:
+    yield x
+    x += 12
 
-n = int(input())
-by_3_4(n)
+[print(x, end=' ') for x in div_by_3and4(int(input()))]

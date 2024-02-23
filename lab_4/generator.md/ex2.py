@@ -1,7 +1,7 @@
-def generator_evens(n):
-  for i in range(1, n+1):
-    if i % 2 == 0:
-      print(i ** 2, end =',')
+def even(n):
+  x = 0
+  while x <= n:
+    yield x
+    x += 2
 
-n = int(input())
-generator_evens(n)
+[print(x, end=', ') for x in even(int(input()))]
