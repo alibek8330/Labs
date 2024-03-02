@@ -7,5 +7,5 @@ def sqrtfunc(sqrtfunc, ms, *args):
 
 n = int(input("Enter a number: "))
 ms = int(input("Enter a number of milliseconds: "))
-print("Square root after specific milliseconds:")
+print("Square root after " + ms +  "milliseconds:")
 print(sqrtfunc(lambda x: math.sqrt(x), ms, n))
