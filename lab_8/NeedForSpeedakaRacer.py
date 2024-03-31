@@ -17,7 +17,7 @@ FramePerSec = pygame.time.Clock()
 
 # Other Variables for use in the program
 SCREEN_WIDTH = 400
-SCREEN_HEIGHT = 600
+SCREEN_HEIGHT = 6000
 SPEED = 5
 SCORE = 0
 COINS = 0

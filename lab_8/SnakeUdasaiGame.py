@@ -159,6 +159,7 @@ while run:
         pygame.quit()
         sys.exit()
 
+
     snake_list.append(new)
     snake_list.pop(0)
 
